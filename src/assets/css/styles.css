@@ -47,19 +47,80 @@ body{
             width: 100%;
             height: 100%;
             background: transparent;
-            border: none;
             outline: none;
-            border: 2px solid rgba (255, 255, 255, .2);
+            border: 2px solid rgba(255, 255, 255, .2);
+            border-radius: 40px;
             font-size: 16px;   
             color: var(--primary-color);
             padding: 20px 40px 20px 20px;
 
             &::placeholder{
                 color: var(--primary-color);
-                
-
             }
-
         }
     }
+
+    .remember-forgot{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: 15px 5px 15px;
+        flex-wrap: wrap;
+
+        label input{
+            accent-color: var(--primary-color);
+            margin-right: 3px;
+
+        }
+
+        a{
+            color: var(--primary-color);
+            text-decoration: none;
+
+            &:hover{
+                text-decoration: underline;
+                color: var(--secondary-color);
+            }
+        }
+    }
+
+    .btn{
+        width: 100%;
+        height: 45px;
+        background: var(--primary-color);
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        cursor: pointer;
+        color: var(--text-btn-color);
+        font-weight: 700;
+        transition: all 0.2s ease-in-out;
+
+        &:hover{
+            background-color: var(--btn-color-hover);
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+    }
+
+    .register-link{
+        display: flex;
+        flex-direction: column;
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+        gap: 8px;
+    
+            a{
+                color: var(--primary-color);
+                text-decoration: none;
+                font-weight: 600;
+
+                &:hover{
+                    text-decoration: underline;
+                    color: var(--secondary-color);
+                }
+            }
+     }
 }
